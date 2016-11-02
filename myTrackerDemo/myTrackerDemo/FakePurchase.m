@@ -8,6 +8,26 @@
 
 #import "FakePurchase.h"
 
+@interface NSBundle (Fake)
+
+- (NSURL *)appStoreReceiptURL;
+
+@end
+
+@implementation NSBundle (Fake)
+
+- (NSURL *)appStoreReceiptURL
+{
+	NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+	NSString *documentsDirectory = [paths objectAtIndex:0];
+	NSString *path = [documentsDirectory stringByAppendingPathComponent:@"fakeReceipt.txt"];
+	NSString *content = @"fake_transaction_receipt_for_ios_7+";
+	[content writeToFile:path atomically:NO encoding:NSStringEncodingConversionAllowLossy error:nil];
+	return [NSURL URLWithString:[NSString stringWithFormat:@"file://%@", path]];
+}
+
+@end
+
 @implementation FakeSKProduct
 
 - (NSDecimalNumber *)price
@@ -17,7 +37,7 @@
 
 - (NSLocale *)priceLocale
 {
-	return [[NSLocale alloc] initWithLocaleIdentifier:@"en_EN"];
+	return [NSLocale currentLocale];
 }
 
 - (NSString *)productIdentifier
