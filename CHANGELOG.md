@@ -1,3 +1,7 @@
+## 1.5.4 (2016.11.18)
+
+Support LevelEvent with params without level value.
+
 ## 1.5.3 (2016.09.20)
 
 Added SearchAd attribution tracking.
