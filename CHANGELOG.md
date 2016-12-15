@@ -1,3 +1,7 @@
+## 1.5.5 (2016.12.15)
+
+Fixed error in SearchAd attribution tracking.
+
 ## 1.5.4 (2016.11.18)
 
 Support LevelEvent with params without level value.
