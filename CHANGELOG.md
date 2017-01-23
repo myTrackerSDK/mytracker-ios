@@ -1,3 +1,7 @@
+## 1.5.6 (2017.01.23)
+
+Return (boolean) value instead of (void) in methods for track events.
+
 ## 1.5.5 (2016.12.15)
 
 Fixed error in SearchAd attribution tracking.
