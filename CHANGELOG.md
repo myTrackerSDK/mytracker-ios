@@ -1,3 +1,7 @@
+## 1.5.9 (2017.02.14)
+
+Fixed error sending custom user id.
+
 ## 1.5.8 (2017.02.09)
 
 Minimum supported iOS version since now is 7.0
