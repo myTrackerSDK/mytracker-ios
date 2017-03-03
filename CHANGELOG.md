@@ -1,3 +1,7 @@
+## 1.5.10 (2017.03.03)
+
+Fixed errors in working with CoreTelephony framework.
+
 ## 1.5.9 (2017.02.14)
 
 Fixed error sending custom user id.
