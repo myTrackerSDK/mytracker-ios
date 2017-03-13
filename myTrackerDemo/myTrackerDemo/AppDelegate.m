@@ -24,12 +24,6 @@
 	MRMyTrackerParams *_params = [MRMyTracker trackerParams];
 	[_params setAge: @100];
 	[_params setGender: MRGenderUnknown];
-	[_params setVkIds:@[@"someID"]];
-	[_params setEmails:@[@"a@a.ru"]];
-	[_params setIcqIds:@[@"someUIN"]];
-	[_params setOkIds:@[@"someID"]];
-	[_params setMrgsUserId:@"someID"];
-	[_params setCustomUserIds:@[@"someID"]];
 	[MRMyTracker setupTracker];
 
 	return YES;
