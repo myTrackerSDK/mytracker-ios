@@ -1,3 +1,7 @@
+## 1.5.11 (2017.03.27)
+
+Support login with phone number.
+
 ## 1.5.10 (2017.03.03)
 
 Fixed errors in working with CoreTelephony framework.
