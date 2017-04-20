@@ -1,3 +1,7 @@
+## 1.5.12 (2017.04.20)
+
+Some improvements.
+
 ## 1.5.11 (2017.03.27)
 
 Support login with phone number.
