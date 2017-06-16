@@ -1,3 +1,7 @@
+## 1.5.13 (2017.06.15)
+
+Added bufferingPeriod property to change event buffering period.
+
 ## 1.5.12 (2017.04.20)
 
 Some improvements.
