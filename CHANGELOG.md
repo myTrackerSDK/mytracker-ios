@@ -1,3 +1,7 @@
+## 1.6.0 (2017.07.13)
+
+Support deferred deeplinks.
+
 ## 1.5.13 (2017.06.15)
 
 Added bufferingPeriod property to change event buffering period.
