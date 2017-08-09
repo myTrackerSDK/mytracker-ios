@@ -1,3 +1,7 @@
+## 1.6.1 (2017.08.09)
+
+Fixed offline attribution tracking.
+
 ## 1.6.0 (2017.07.13)
 
 Support deferred deeplinks.
