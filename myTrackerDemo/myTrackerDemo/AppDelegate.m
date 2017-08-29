@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import <MyTrackerSDK/MyTrackerSDK.h>
+#import "ADClient+Fake.h"
 
 @interface AppDelegate ()
 
@@ -18,14 +19,13 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-
 	[MRMyTracker setDebugMode:YES];
 	[MRMyTracker createTracker:@"97953241358447035268"];
 	MRMyTrackerParams *_params = [MRMyTracker trackerParams];
 	[_params setAge: @100];
 	[_params setGender: MRGenderUnknown];
 	[MRMyTracker setupTracker];
-
+	[ADClient sharedClient].isAttributionDetailsEnabled = NO;
 	return YES;
 }
 

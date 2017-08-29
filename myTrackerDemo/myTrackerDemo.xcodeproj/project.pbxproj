@@ -16,6 +16,7 @@
 		38E3ECF81D477E1C00A72DCF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38E3ECF71D477E1C00A72DCF /* ViewController.m */; };
 		38E3ECFB1D477E1C00A72DCF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38E3ECF91D477E1C00A72DCF /* Main.storyboard */; };
 		38E3ED001D477E1C00A72DCF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38E3ECFE1D477E1C00A72DCF /* LaunchScreen.storyboard */; };
+		89F50FCE1F504E0000990071 /* ADClient+Fake.m in Sources */ = {isa = PBXBuildFile; fileRef = 89F50FCD1F504E0000990071 /* ADClient+Fake.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,8 @@
 		38E3ECFA1D477E1C00A72DCF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		38E3ECFF1D477E1C00A72DCF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		38E3ED011D477E1C00A72DCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		89F50FCC1F504E0000990071 /* ADClient+Fake.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ADClient+Fake.h"; sourceTree = "<group>"; };
+		89F50FCD1F504E0000990071 /* ADClient+Fake.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ADClient+Fake.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +86,8 @@
 				38E3ECF71D477E1C00A72DCF /* ViewController.m */,
 				387F08731D47B20B007B28BE /* FakePurchase.h */,
 				387F08741D47B20B007B28BE /* FakePurchase.m */,
+				89F50FCC1F504E0000990071 /* ADClient+Fake.h */,
+				89F50FCD1F504E0000990071 /* ADClient+Fake.m */,
 				38E3ECF91D477E1C00A72DCF /* Main.storyboard */,
 				38E3ECFE1D477E1C00A72DCF /* LaunchScreen.storyboard */,
 				38E3ED011D477E1C00A72DCF /* Info.plist */,
@@ -180,6 +185,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89F50FCE1F504E0000990071 /* ADClient+Fake.m in Sources */,
 				38E3ECF81D477E1C00A72DCF /* ViewController.m in Sources */,
 				38E3ECF51D477E1C00A72DCF /* AppDelegate.m in Sources */,
 				38E3ECF21D477E1C00A72DCF /* main.m in Sources */,
