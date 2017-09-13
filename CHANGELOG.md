@@ -1,3 +1,7 @@
+## 1.6.3 (2017.09.13)
+
+Fixed errors.  
+
 ## 1.6.2 (2017.08.29)
 
 Separate event for iAd attribution.  
