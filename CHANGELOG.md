@@ -1,3 +1,7 @@
+## 1.6.4 (2017.09.27)
+
+Improvements in purchases tracking.  
+
 ## 1.6.3 (2017.09.13)
 
 Fixed errors.  
