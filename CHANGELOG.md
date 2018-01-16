@@ -1,3 +1,7 @@
+## 1.7.0 (2018.01.15)
+
+Support automatic in-app purchase tracking.  
+
 ## 1.6.4 (2017.09.27)
 
 Improvements in purchases tracking.  

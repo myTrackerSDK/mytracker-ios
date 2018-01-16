@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		387F08721D47AACD007B28BE /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 387F08711D47AACD007B28BE /* StoreKit.framework */; };
-		387F08751D47B20B007B28BE /* FakePurchase.m in Sources */ = {isa = PBXBuildFile; fileRef = 387F08741D47B20B007B28BE /* FakePurchase.m */; };
 		387F08781D47B685007B28BE /* myTarget-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 387F08771D47B685007B28BE /* myTarget-logo.png */; };
 		387F087B1D48B452007B28BE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 387F087A1D48B452007B28BE /* Images.xcassets */; };
 		38E3ECF21D477E1C00A72DCF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 38E3ECF11D477E1C00A72DCF /* main.m */; };
@@ -21,8 +20,6 @@
 
 /* Begin PBXFileReference section */
 		387F08711D47AACD007B28BE /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
-		387F08731D47B20B007B28BE /* FakePurchase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FakePurchase.h; sourceTree = "<group>"; };
-		387F08741D47B20B007B28BE /* FakePurchase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FakePurchase.m; sourceTree = "<group>"; };
 		387F08771D47B685007B28BE /* myTarget-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "myTarget-logo.png"; sourceTree = "<group>"; };
 		387F087A1D48B452007B28BE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		38E3ECED1D477E1C00A72DCF /* myTrackerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myTrackerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -84,8 +81,6 @@
 				38E3ECF41D477E1C00A72DCF /* AppDelegate.m */,
 				38E3ECF61D477E1C00A72DCF /* ViewController.h */,
 				38E3ECF71D477E1C00A72DCF /* ViewController.m */,
-				387F08731D47B20B007B28BE /* FakePurchase.h */,
-				387F08741D47B20B007B28BE /* FakePurchase.m */,
 				89F50FCC1F504E0000990071 /* ADClient+Fake.h */,
 				89F50FCD1F504E0000990071 /* ADClient+Fake.m */,
 				38E3ECF91D477E1C00A72DCF /* Main.storyboard */,
@@ -189,7 +184,6 @@
 				38E3ECF81D477E1C00A72DCF /* ViewController.m in Sources */,
 				38E3ECF51D477E1C00A72DCF /* AppDelegate.m in Sources */,
 				38E3ECF21D477E1C00A72DCF /* main.m in Sources */,
-				387F08751D47B20B007B28BE /* FakePurchase.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,8 +1,12 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="opP-mm-eK7">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="opP-mm-eK7">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
@@ -10,11 +14,11 @@
             <objects>
                 <navigationController id="opP-mm-eK7" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="urq-Ex-htS">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.97254901960784312" green="0.18823529411764706" blue="0.24705882352941178" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.97254901960784312" green="0.18823529411764706" blue="0.24705882352941178" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
-                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </textAttributes>
                     </navigationBar>
                     <connections>
@@ -34,114 +38,97 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2bx-6z-EFh">
-                                <rect key="frame" x="200" y="81" width="200" height="46"/>
-                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="87.5" y="81" width="200" height="46"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="46" id="sLn-7h-GB7"/>
                                 </constraints>
                                 <size key="titleShadowOffset" width="4" height="4"/>
                                 <state key="normal" title="TRACK INVITE">
-                                    <color key="titleColor" red="0.93212461471557617" green="0.046006008982658386" blue="0.036092888563871384" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" red="0.9023469090461731" green="0.0" blue="0.047981206327676773" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="trackInvite:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7wG-AE-Zoy"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OmK-c5-XqS">
-                                <rect key="frame" x="200" y="142" width="200" height="46"/>
-                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="87.5" y="142" width="200" height="46"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="46" id="mmm-Bv-ap2"/>
                                 </constraints>
                                 <size key="titleShadowOffset" width="4" height="4"/>
                                 <state key="normal" title="TRACK REGISTRATION">
-                                    <color key="titleColor" red="0.93212461471557617" green="0.046006008982658386" blue="0.036092888563871384" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" red="0.9023469090461731" green="0.0" blue="0.047981206327676773" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="trackRegistration:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cNX-Vj-swu"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AFS-bt-iPw">
-                                <rect key="frame" x="200" y="203" width="200" height="46"/>
-                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="46" id="ysa-ha-UPe"/>
-                                </constraints>
-                                <size key="titleShadowOffset" width="4" height="4"/>
-                                <state key="normal" title="TRACK PURCHASE">
-                                    <color key="titleColor" red="0.93212461471557617" green="0.046006008982658386" blue="0.036092888563871384" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="trackPurchase:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AMe-KO-hnr"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oah-nu-4KG">
-                                <rect key="frame" x="200" y="263" width="200" height="46"/>
-                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="87.5" y="203" width="200" height="46"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="46" id="xAZ-C9-Mm6"/>
                                 </constraints>
                                 <size key="titleShadowOffset" width="4" height="4"/>
                                 <state key="normal" title="TRACK LEVEL">
-                                    <color key="titleColor" red="0.93212461471557617" green="0.046006008982658386" blue="0.036092888563871384" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" red="0.9023469090461731" green="0.0" blue="0.047981206327676773" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="trackLevel:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FFJ-bn-eYH"/>
                                 </connections>
                             </button>
                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dPl-h7-dx2">
-                                <rect key="frame" x="200" y="20" width="200" height="46"/>
-                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="87.5" y="20" width="200" height="46"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="46" id="AVS-fQ-1Il"/>
                                     <constraint firstAttribute="width" constant="200" id="pIs-39-fPX"/>
                                 </constraints>
                                 <state key="normal" title="TRACK LOGIN">
-                                    <color key="titleColor" red="0.93212461471557617" green="0.046006008982658386" blue="0.036092888563871384" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" red="0.9023469090461731" green="0.0" blue="0.047981206327676773" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="trackLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bwd-lB-LUK"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gZg-eb-K1i">
-                                <rect key="frame" x="200" y="323" width="200" height="46"/>
-                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="87.5" y="264" width="200" height="46"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="46" id="CYm-Uk-scN"/>
                                     <constraint firstAttribute="width" constant="200" id="cTL-2J-uaN"/>
                                 </constraints>
                                 <size key="titleShadowOffset" width="4" height="4"/>
                                 <state key="normal" title="TRACK CUSTOM EVENT">
-                                    <color key="titleColor" red="0.93212461469999996" green="0.046006008979999999" blue="0.036092888560000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" red="0.9023469090461731" green="0.0" blue="0.047981206327676773" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="trackCustomEvent:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UVy-Cp-qXi"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="OmK-c5-XqS" firstAttribute="trailing" secondItem="AFS-bt-iPw" secondAttribute="trailing" id="A2x-rn-Vk6"/>
                             <constraint firstItem="2bx-6z-EFh" firstAttribute="top" secondItem="dPl-h7-dx2" secondAttribute="bottom" constant="15" id="ACE-wm-Td1"/>
-                            <constraint firstItem="AFS-bt-iPw" firstAttribute="leading" secondItem="Oah-nu-4KG" secondAttribute="leading" id="D7G-eh-h3T"/>
+                            <constraint firstItem="Oah-nu-4KG" firstAttribute="trailing" secondItem="OmK-c5-XqS" secondAttribute="trailing" id="DOE-VS-Eh1"/>
                             <constraint firstItem="2bx-6z-EFh" firstAttribute="trailing" secondItem="OmK-c5-XqS" secondAttribute="trailing" id="DVr-hI-Ia3"/>
-                            <constraint firstItem="gZg-eb-K1i" firstAttribute="top" secondItem="Oah-nu-4KG" secondAttribute="bottom" constant="14" id="EZc-JY-hca"/>
+                            <constraint firstItem="gZg-eb-K1i" firstAttribute="top" secondItem="Oah-nu-4KG" secondAttribute="bottom" constant="15" id="EZc-JY-hca"/>
+                            <constraint firstItem="Oah-nu-4KG" firstAttribute="top" secondItem="OmK-c5-XqS" secondAttribute="bottom" constant="15" id="I8q-rm-xrJ"/>
                             <constraint firstItem="dPl-h7-dx2" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="20" symbolic="YES" id="Iio-ef-Je6"/>
                             <constraint firstItem="2bx-6z-EFh" firstAttribute="leading" secondItem="OmK-c5-XqS" secondAttribute="leading" id="Pjs-zS-ekM"/>
-                            <constraint firstItem="OmK-c5-XqS" firstAttribute="leading" secondItem="AFS-bt-iPw" secondAttribute="leading" id="Qs5-sp-xHe"/>
                             <constraint firstItem="Oah-nu-4KG" firstAttribute="leading" secondItem="gZg-eb-K1i" secondAttribute="leading" id="cFX-XK-Hkb"/>
                             <constraint firstItem="dPl-h7-dx2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cIT-7r-sCg"/>
                             <constraint firstItem="dPl-h7-dx2" firstAttribute="leading" secondItem="2bx-6z-EFh" secondAttribute="leading" id="caj-Vk-I2K"/>
-                            <constraint firstItem="Oah-nu-4KG" firstAttribute="top" secondItem="AFS-bt-iPw" secondAttribute="bottom" constant="14" id="kUj-mV-oPc"/>
-                            <constraint firstItem="AFS-bt-iPw" firstAttribute="top" secondItem="OmK-c5-XqS" secondAttribute="bottom" constant="15" id="oOZ-fg-diS"/>
                             <constraint firstItem="dPl-h7-dx2" firstAttribute="trailing" secondItem="2bx-6z-EFh" secondAttribute="trailing" id="pHm-ej-3mU"/>
+                            <constraint firstItem="Oah-nu-4KG" firstAttribute="leading" secondItem="OmK-c5-XqS" secondAttribute="leading" id="tbw-BA-Frh"/>
                             <constraint firstItem="Oah-nu-4KG" firstAttribute="trailing" secondItem="gZg-eb-K1i" secondAttribute="trailing" id="vlt-7G-lBh"/>
                             <constraint firstItem="OmK-c5-XqS" firstAttribute="top" secondItem="2bx-6z-EFh" secondAttribute="bottom" constant="15" id="wsl-q2-tSL"/>
-                            <constraint firstItem="AFS-bt-iPw" firstAttribute="trailing" secondItem="Oah-nu-4KG" secondAttribute="trailing" id="xpn-uV-nSb"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="myTrackerDemo" id="AMy-bC-BFq"/>
@@ -150,7 +137,6 @@
                         <outlet property="_trackInviteButton" destination="2bx-6z-EFh" id="s2G-MM-Ied"/>
                         <outlet property="_trackLevelButton" destination="Oah-nu-4KG" id="ket-De-K6D"/>
                         <outlet property="_trackLoginButton" destination="dPl-h7-dx2" id="SbN-VB-9ei"/>
-                        <outlet property="_trackPurchaseButton" destination="AFS-bt-iPw" id="QnS-pq-sFb"/>
                         <outlet property="_trackRegistrationButton" destination="OmK-c5-XqS" id="Rq0-Bm-BhW"/>
                     </connections>
                 </viewController>

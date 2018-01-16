@@ -8,7 +8,6 @@
 
 #import "ViewController.h"
 #import <MyTrackerSDK/MyTrackerSDK.h>
-#import "FakePurchase.h"
 
 @interface ViewController ()
 
@@ -19,7 +18,6 @@
 	IBOutlet UIButton *_trackLoginButton;
 	IBOutlet UIButton *_trackInviteButton;
 	IBOutlet UIButton *_trackRegistrationButton;
-	IBOutlet UIButton *_trackPurchaseButton;
 	IBOutlet UIButton *_trackLevelButton;
 	IBOutlet UIButton *_trackCustomButton;
 }
@@ -30,7 +28,6 @@
 	[self setStyleForButton:_trackLoginButton];
 	[self setStyleForButton:_trackInviteButton];
 	[self setStyleForButton:_trackRegistrationButton];
-	[self setStyleForButton:_trackPurchaseButton];
 	[self setStyleForButton:_trackLevelButton];
 	[self setStyleForButton:_trackCustomButton];
 }
@@ -56,13 +53,6 @@
 - (IBAction)trackRegistration:(id)sender
 {
 	[MRMyTracker trackRegistrationEvent];
-}
-
-- (IBAction)trackPurchase:(id)sender
-{
-	SKProduct *product = [[FakeSKProduct alloc] init];
-	SKPaymentTransaction *transaction = [[FakeSKTransaction alloc] init];
-	[MRMyTracker trackPurchaseWithProduct:product transaction:transaction];
 }
 
 - (IBAction)trackLevel:(id)sender
