@@ -1,3 +1,7 @@
+## 1.7.1 (2018.02.16)
+
+Added flush method for immediate sending events.  
+
 ## 1.7.0 (2018.01.15)
 
 Support automatic in-app purchase tracking.  
