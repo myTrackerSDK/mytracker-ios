@@ -1,3 +1,7 @@
+## 1.7.3 (2018.04.18)
+
+Support deeplink tracking.  
+
 ## 1.7.2 (2018.03.19)
 
 Detecting jailbroken devices.  
