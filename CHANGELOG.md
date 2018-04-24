@@ -1,3 +1,7 @@
+## 1.7.4 (2018.04.23)
+
+Improvements in deeplink tracking.  
+
 ## 1.7.3 (2018.04.18)
 
 Support deeplink tracking.  

@@ -20,7 +20,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
 	[MRMyTracker setDebugMode:YES];
-	[MRMyTracker createTracker:@"97953241358447035268"];
+	[MRMyTracker createTracker:@"34380715224647855796"];
 	MRMyTrackerParams *_params = [MRMyTracker trackerParams];
 	[_params setAge: @100];
 	[_params setGender: MRGenderUnknown];
@@ -29,29 +29,19 @@
 	return YES;
 }
 
-- (void)applicationWillResignActive:(UIApplication *)application
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(nullable NSString *)sourceApplication annotation:(id)annotation
 {
-
+	return [MRMyTracker handleOpenURL:url sourceApplication:sourceApplication annotation:annotation];
 }
 
-- (void)applicationDidEnterBackground:(UIApplication *)application
+- (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey, id> *)options
 {
-
+	return [MRMyTracker handleOpenURL:url options:options];
 }
 
-- (void)applicationWillEnterForeground:(UIApplication *)application
+- (BOOL)application:(UIApplication *)application continueUserActivity:(NSUserActivity *)userActivity restorationHandler:(void(^)(NSArray * __nullable restorableObjects))restorationHandler
 {
-
-}
-
-- (void)applicationDidBecomeActive:(UIApplication *)application
-{
-
-}
-
-- (void)applicationWillTerminate:(UIApplication *)application
-{
-
+	return [MRMyTracker continueUserActivity:userActivity restorationHandler:restorationHandler];
 }
 
 @end
