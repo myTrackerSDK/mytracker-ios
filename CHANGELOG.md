@@ -1,3 +1,7 @@
+## 1.7.5 (2018.12.13)
+
+Added forcingPeriod parameter to force events sending.  
+
 ## 1.7.4 (2018.04.23)
 
 Improvements in deeplink tracking.  
