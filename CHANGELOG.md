@@ -1,3 +1,7 @@
+## 1.7.6 (2019.02.19)
+
+Added parameters about discount into purchase events.  
+
 ## 1.7.5 (2018.12.13)
 
 Added forcingPeriod parameter to force events sending.  
