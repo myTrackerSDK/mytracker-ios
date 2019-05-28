@@ -1,3 +1,7 @@
+## 1.7.7 (2019.05.28)
+
+Improved launch tracking when process was started by data-push notification.
+
 ## 1.7.6 (2019.02.19)
 
 Added parameters about discount into purchase events.  
