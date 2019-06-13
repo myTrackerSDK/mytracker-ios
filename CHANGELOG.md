@@ -1,3 +1,5 @@
+## 1.7.8 (2019.06.13)
+
 ## 1.7.7 (2019.05.28)
 
 Improved launch tracking when process was started by data-push notification.
