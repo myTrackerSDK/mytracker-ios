@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="XCs-Lk-FTL">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController title="Main" id="BYZ-38-t0r" customClass="ViewController" customModule="myTrackerDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Custom event name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GVY-sK-sT4">
+                                <rect key="frame" x="212" y="96" width="192" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Olm-ve-lpe">
+                                <rect key="frame" x="10" y="98" width="192" height="30"/>
+                                <state key="normal" title="Track custom event"/>
+                                <connections>
+                                    <action selector="trackCustomEvent:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9cJ-Y9-llH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X6K-4w-fzz">
+                                <rect key="frame" x="10" y="138" width="394" height="30"/>
+                                <state key="normal" title="Track login event"/>
+                                <connections>
+                                    <action selector="trackLoginEvent:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xly-Rw-ePZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vl9-TE-eFV">
+                                <rect key="frame" x="10" y="178" width="394" height="30"/>
+                                <state key="normal" title="Track registration event"/>
+                                <connections>
+                                    <action selector="trackRegistrationEvent:" destination="BYZ-38-t0r" eventType="touchUpInside" id="trz-xe-6wg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3cb-h2-8Aj">
+                                <rect key="frame" x="10" y="218" width="394" height="30"/>
+                                <state key="normal" title="Track invite event"/>
+                                <connections>
+                                    <action selector="trackInviteEvent:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fgk-kR-twC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6TT-np-fQn">
+                                <rect key="frame" x="10" y="258" width="394" height="30"/>
+                                <state key="normal" title="Track level achieved event"/>
+                                <connections>
+                                    <action selector="trackLevelAchievedEvent:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qxp-M8-0Dz"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Olm-ve-lpe" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="0jc-4A-6fa"/>
+                            <constraint firstItem="Vl9-TE-eFV" firstAttribute="trailing" secondItem="3cb-h2-8Aj" secondAttribute="trailing" id="2Pe-Rh-bYo"/>
+                            <constraint firstItem="6TT-np-fQn" firstAttribute="leading" secondItem="3cb-h2-8Aj" secondAttribute="leading" id="4YS-H1-dXr"/>
+                            <constraint firstItem="X6K-4w-fzz" firstAttribute="height" secondItem="Olm-ve-lpe" secondAttribute="height" id="Gx7-1D-mxo"/>
+                            <constraint firstItem="3cb-h2-8Aj" firstAttribute="top" secondItem="Vl9-TE-eFV" secondAttribute="bottom" constant="10" id="LTB-P1-uMh"/>
+                            <constraint firstItem="GVY-sK-sT4" firstAttribute="leading" secondItem="Olm-ve-lpe" secondAttribute="trailing" constant="10" id="Lsh-FM-JRh"/>
+                            <constraint firstItem="X6K-4w-fzz" firstAttribute="leading" secondItem="Olm-ve-lpe" secondAttribute="leading" id="Mw1-pg-Vrz"/>
+                            <constraint firstItem="3cb-h2-8Aj" firstAttribute="trailing" secondItem="6TT-np-fQn" secondAttribute="trailing" id="W0A-hB-8Gt"/>
+                            <constraint firstItem="3cb-h2-8Aj" firstAttribute="leading" secondItem="Vl9-TE-eFV" secondAttribute="leading" id="YfP-Hs-8oI"/>
+                            <constraint firstItem="Vl9-TE-eFV" firstAttribute="leading" secondItem="X6K-4w-fzz" secondAttribute="leading" id="ZBH-gQ-ycf"/>
+                            <constraint firstItem="GVY-sK-sT4" firstAttribute="centerY" secondItem="Olm-ve-lpe" secondAttribute="centerY" id="Zzg-k4-wWF"/>
+                            <constraint firstItem="X6K-4w-fzz" firstAttribute="trailing" secondItem="Vl9-TE-eFV" secondAttribute="trailing" id="bcZ-kC-Oou"/>
+                            <constraint firstItem="GVY-sK-sT4" firstAttribute="width" secondItem="Olm-ve-lpe" secondAttribute="width" id="c6E-sI-qqx"/>
+                            <constraint firstItem="6TT-np-fQn" firstAttribute="height" secondItem="3cb-h2-8Aj" secondAttribute="height" id="cLq-ZD-woI"/>
+                            <constraint firstItem="Olm-ve-lpe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="cx4-9x-9D0"/>
+                            <constraint firstItem="X6K-4w-fzz" firstAttribute="top" secondItem="Olm-ve-lpe" secondAttribute="bottom" constant="10" id="fUZ-0a-EVr"/>
+                            <constraint firstItem="GVY-sK-sT4" firstAttribute="trailing" secondItem="X6K-4w-fzz" secondAttribute="trailing" id="gGA-a5-Nd2"/>
+                            <constraint firstItem="Vl9-TE-eFV" firstAttribute="top" secondItem="X6K-4w-fzz" secondAttribute="bottom" constant="10" id="hEm-Z9-dyn"/>
+                            <constraint firstItem="3cb-h2-8Aj" firstAttribute="height" secondItem="Vl9-TE-eFV" secondAttribute="height" id="jYK-Pg-Kku"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GVY-sK-sT4" secondAttribute="trailing" constant="10" id="lb1-vK-2xg"/>
+                            <constraint firstItem="6TT-np-fQn" firstAttribute="top" secondItem="3cb-h2-8Aj" secondAttribute="bottom" constant="10" id="nJw-hU-CXP"/>
+                            <constraint firstItem="Vl9-TE-eFV" firstAttribute="height" secondItem="X6K-4w-fzz" secondAttribute="height" id="rp0-w8-yLP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="qiW-pe-MLk"/>
+                    <connections>
+                        <outlet property="customEventNameField" destination="GVY-sK-sT4" id="mbJ-sU-GTn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="491" y="-6"/>
+        </scene>
+        <!--Main-->
+        <scene sceneID="bM9-zq-ttF">
+            <objects>
+                <navigationController title="Main" id="XCs-Lk-FTL" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="gek-QA-nSw">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="RSO-0k-3sN"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2PO-d7-umt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-371" y="-6"/>
+        </scene>
+    </scenes>
+    <color key="tintColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+</document>

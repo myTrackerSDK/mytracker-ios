@@ -20,11 +20,10 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
 	[MRMyTracker setDebugMode:YES];
-	[MRMyTracker createTracker:@"34380715224647855796"];
 	MRMyTrackerParams *_params = [MRMyTracker trackerParams];
 	[_params setAge: @100];
 	[_params setGender: MRGenderUnknown];
-	[MRMyTracker setupTracker];
+	[MRMyTracker setupTracker:@"34380715224647855796"];
 	[ADClient sharedClient].isAttributionDetailsEnabled = NO;
 	return YES;
 }
@@ -39,7 +38,7 @@
 	return [MRMyTracker handleOpenURL:url options:options];
 }
 
-- (BOOL)application:(UIApplication *)application continueUserActivity:(NSUserActivity *)userActivity restorationHandler:(void(^)(NSArray * __nullable restorableObjects))restorationHandler
+- (BOOL)application:(UIApplication *)application continueUserActivity:(NSUserActivity *)userActivity restorationHandler:(void (^)(NSArray<id<UIUserActivityRestoring>> * _Nullable))restorationHandler
 {
 	return [MRMyTracker continueUserActivity:userActivity restorationHandler:restorationHandler];
 }

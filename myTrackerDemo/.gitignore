@@ -1,7 +1,0 @@
-.idea
-Build/
-*.DS_Store
-Podfile.lock
-myTrackerDemo.xcworkspace/
-myTrackerDemo.xcodeproj/xcuserdata/
-Pods/
