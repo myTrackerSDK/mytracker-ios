@@ -24,7 +24,7 @@ Demo-app with examples of integration available in [myTrackerDemo folder](https:
 
 ## Requirements
 
-iOS 7.0
+iOS 8.0
 
 [license-svg]: https://img.shields.io/badge/license-LGPL-lightgrey.svg
 [license-link]: https://github.com/myTrackerSDK/mytracker-ios/blob/master/LICENSE
