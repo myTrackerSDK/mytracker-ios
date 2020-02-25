@@ -15,6 +15,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate
 	
 	var window: UIWindow?
 	
+	private var deeplink: String?
+	
 	func application(_ application: UIApplication,
 					 didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool
 	{
@@ -31,7 +33,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate
 		
 		// Set current user's age to 23
 		MRMyTracker.trackerParams().age = NSNumber(value: 23)
-		// As you can see, trackerParams properties can be set any moment in any other place in the project
+		
+		
+		// Set delegate which will receive attribution's information.
+		MRMyTracker.setAttributionDelegate(self)
 		
 		ADClient.shared().isAttributionDetailsEnabled = false;
 		
@@ -58,5 +63,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate
 			return false
 		}
 		return MRMyTracker.continue(userActivity, restorationHandler: handler)
+	}
+}
+
+// Current class implements MRMyTrackerAttributionDelegate protocol in order to be suitable for MRMyTracker attribution delegate property
+extension AppDelegate: MRMyTrackerAttributionDelegate
+{
+	func didReceive(_ attribution: MRMyTrackerAttribution)
+	{
+		deeplink = attribution.deeplink
 	}
 }
