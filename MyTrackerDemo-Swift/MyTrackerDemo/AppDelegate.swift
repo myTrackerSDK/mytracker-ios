@@ -57,11 +57,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate
 					 continue userActivity: NSUserActivity,
 					 restorationHandler: @escaping ([UIUserActivityRestoring]?) -> Void) -> Bool
 	{
-		guard let handler: ([Any]?) -> Void = restorationHandler as? ([Any]?) -> ()
-		else
-		{
-			return false
-		}
+		let handler: ([Any]?) -> Void = {_ in }
 		return MRMyTracker.continue(userActivity, restorationHandler: handler)
 	}
 }
