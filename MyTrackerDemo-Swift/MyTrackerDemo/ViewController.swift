@@ -26,12 +26,12 @@ class ViewController: UIViewController
 
 	@IBAction func trackLoginEvent(_ sender: Any)
 	{
-		MRMyTracker.trackLoginEvent()
+		MRMyTracker.trackLoginEvent("user_id")
 	}
 
 	@IBAction func trackRegistrationEvent(_ sender: Any)
 	{
-		MRMyTracker.trackRegistrationEvent()
+		MRMyTracker.trackRegistrationEvent("user_id")
 	}
 
 	@IBAction func trackInviteEvent(_ sender: Any)

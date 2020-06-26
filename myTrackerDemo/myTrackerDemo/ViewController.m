@@ -42,7 +42,7 @@
 
 - (IBAction)trackLogin:(id)sender
 {
-	[MRMyTracker trackLoginEvent];
+	[MRMyTracker trackLoginEvent:@"user_id"];
 }
 
 - (IBAction)trackInvite:(id)sender
@@ -52,7 +52,7 @@
 
 - (IBAction)trackRegistration:(id)sender
 {
-	[MRMyTracker trackRegistrationEvent];
+	[MRMyTracker trackRegistrationEvent:@"user_id"];
 }
 
 - (IBAction)trackLevel:(id)sender
