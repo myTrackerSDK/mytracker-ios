@@ -45,20 +45,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate
 
 	func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey: Any]) -> Bool
 	{
-		return MRMyTracker.handleOpen(url, options: options)
+		return MRMyTracker.handleOpen(url, options: nil)
 	}
 
 	func application(_ application: UIApplication, open url: URL, sourceApplication: String?, annotation: Any) -> Bool
 	{
-		return MRMyTracker.handleOpen(url, sourceApplication: sourceApplication, annotation: annotation)
+		return MRMyTracker.handleOpen(url, sourceApplication: nil, annotation: nil)
 	}
 
 	func application(_ application: UIApplication,
 					 continue userActivity: NSUserActivity,
 					 restorationHandler: @escaping ([UIUserActivityRestoring]?) -> Void) -> Bool
 	{
-		let handler: ([Any]?) -> Void = {_ in }
-		return MRMyTracker.continue(userActivity, restorationHandler: handler)
+		return MRMyTracker.continue(userActivity, restorationHandler: nil)
 	}
 }
 

@@ -55,6 +55,7 @@
 		27EC925E23ABAA92003B2CC9 /* MyTrackerDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MyTrackerDemo-Bridging-Header.h"; sourceTree = "<group>"; };
 		27EC925F23ABAA93003B2CC9 /* ADClient+Fake.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ADClient+Fake.h"; sourceTree = "<group>"; };
 		27EC926023ABAA93003B2CC9 /* ADClient+Fake.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ADClient+Fake.m"; sourceTree = "<group>"; };
+		BCBAF08424ED936C0084EE93 /* MyTrackerDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MyTrackerDemo.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +98,7 @@
 		2723F91E2379C1D0001EA7FD /* MyTrackerDemo */ = {
 			isa = PBXGroup;
 			children = (
+				BCBAF08424ED936C0084EE93 /* MyTrackerDemo.entitlements */,
 				2723F9232379C1D0001EA7FD /* ViewController.swift */,
 				2723F91F2379C1D0001EA7FD /* AppDelegate.swift */,
 				2723F9252379C1D0001EA7FD /* Main.storyboard */,
@@ -360,6 +362,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = MyTrackerDemo/MyTrackerDemo.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L2QFT5NA2Q;
@@ -368,7 +371,7 @@
 					"$(SOURCE_ROOT)",
 				);
 				INFOPLIST_FILE = MyTrackerDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -397,7 +400,7 @@
 					"\"iAd\"",
 					"-fprofile-arcs",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.my.tracker.sdkDemoApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.my.tracker.llc.demo.swift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "MyTrackerDemo/MyTrackerDemo-Bridging-Header.h";
@@ -412,6 +415,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = MyTrackerDemo/MyTrackerDemo.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L2QFT5NA2Q;
@@ -420,7 +424,7 @@
 					"$(SOURCE_ROOT)",
 				);
 				INFOPLIST_FILE = MyTrackerDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -449,7 +453,7 @@
 					"\"iAd\"",
 					"-fprofile-arcs",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.my.tracker.sdkDemoApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.my.tracker.llc.demo.swift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "MyTrackerDemo/MyTrackerDemo-Bridging-Header.h";
