@@ -1,148 +1,116 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="opP-mm-eK7">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="XCs-Lk-FTL">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Navigation Controller-->
-        <scene sceneID="Khf-FB-AaU">
-            <objects>
-                <navigationController id="opP-mm-eK7" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="urq-Ex-htS">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.97254901960784312" green="0.18823529411764706" blue="0.24705882352941178" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <textAttributes key="titleTextAttributes">
-                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        </textAttributes>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="BZg-WF-kdp"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="bOf-tC-Pan" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-464" y="-634"/>
-        </scene>
-        <!--myTrackerDemo-->
+        <!--Main-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                <viewController title="Main" id="BYZ-38-t0r" customClass="ViewController" customModule="MyTrackerDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="MS2-c1-9IT"/>
+                        <viewControllerLayoutGuide type="bottom" id="i9U-Ej-aHX"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2bx-6z-EFh">
-                                <rect key="frame" x="87.5" y="81" width="200" height="46"/>
-                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="46" id="sLn-7h-GB7"/>
-                                </constraints>
-                                <size key="titleShadowOffset" width="4" height="4"/>
-                                <state key="normal" title="TRACK INVITE">
-                                    <color key="titleColor" red="0.9023469090461731" green="0.0" blue="0.047981206327676773" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Custom event name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GVY-sK-sT4">
+                                <rect key="frame" x="212" y="96" width="192" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Olm-ve-lpe">
+                                <rect key="frame" x="10" y="98" width="192" height="30"/>
+                                <state key="normal" title="Track custom event"/>
                                 <connections>
-                                    <action selector="trackInvite:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7wG-AE-Zoy"/>
+                                    <action selector="trackCustomEvent:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9cJ-Y9-llH"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OmK-c5-XqS">
-                                <rect key="frame" x="87.5" y="142" width="200" height="46"/>
-                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="46" id="mmm-Bv-ap2"/>
-                                </constraints>
-                                <size key="titleShadowOffset" width="4" height="4"/>
-                                <state key="normal" title="TRACK REGISTRATION">
-                                    <color key="titleColor" red="0.9023469090461731" green="0.0" blue="0.047981206327676773" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X6K-4w-fzz">
+                                <rect key="frame" x="10" y="138" width="394" height="30"/>
+                                <state key="normal" title="Track login event"/>
                                 <connections>
-                                    <action selector="trackRegistration:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cNX-Vj-swu"/>
+                                    <action selector="trackLoginEvent:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xly-Rw-ePZ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oah-nu-4KG">
-                                <rect key="frame" x="87.5" y="203" width="200" height="46"/>
-                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="46" id="xAZ-C9-Mm6"/>
-                                </constraints>
-                                <size key="titleShadowOffset" width="4" height="4"/>
-                                <state key="normal" title="TRACK LEVEL">
-                                    <color key="titleColor" red="0.9023469090461731" green="0.0" blue="0.047981206327676773" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vl9-TE-eFV">
+                                <rect key="frame" x="10" y="178" width="394" height="30"/>
+                                <state key="normal" title="Track registration event"/>
                                 <connections>
-                                    <action selector="trackLevel:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FFJ-bn-eYH"/>
+                                    <action selector="trackRegistrationEvent:" destination="BYZ-38-t0r" eventType="touchUpInside" id="trz-xe-6wg"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dPl-h7-dx2">
-                                <rect key="frame" x="87.5" y="20" width="200" height="46"/>
-                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="46" id="AVS-fQ-1Il"/>
-                                    <constraint firstAttribute="width" constant="200" id="pIs-39-fPX"/>
-                                </constraints>
-                                <state key="normal" title="TRACK LOGIN">
-                                    <color key="titleColor" red="0.9023469090461731" green="0.0" blue="0.047981206327676773" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3cb-h2-8Aj">
+                                <rect key="frame" x="10" y="218" width="394" height="30"/>
+                                <state key="normal" title="Track invite event"/>
                                 <connections>
-                                    <action selector="trackLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bwd-lB-LUK"/>
+                                    <action selector="trackInviteEvent:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fgk-kR-twC"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gZg-eb-K1i">
-                                <rect key="frame" x="87.5" y="264" width="200" height="46"/>
-                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="46" id="CYm-Uk-scN"/>
-                                    <constraint firstAttribute="width" constant="200" id="cTL-2J-uaN"/>
-                                </constraints>
-                                <size key="titleShadowOffset" width="4" height="4"/>
-                                <state key="normal" title="TRACK CUSTOM EVENT">
-                                    <color key="titleColor" red="0.9023469090461731" green="0.0" blue="0.047981206327676773" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6TT-np-fQn">
+                                <rect key="frame" x="10" y="258" width="394" height="30"/>
+                                <state key="normal" title="Track level achieved event"/>
                                 <connections>
-                                    <action selector="trackCustomEvent:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UVy-Cp-qXi"/>
+                                    <action selector="trackLevelAchievedEvent:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qxp-M8-0Dz"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="2bx-6z-EFh" firstAttribute="top" secondItem="dPl-h7-dx2" secondAttribute="bottom" constant="15" id="ACE-wm-Td1"/>
-                            <constraint firstItem="Oah-nu-4KG" firstAttribute="trailing" secondItem="OmK-c5-XqS" secondAttribute="trailing" id="DOE-VS-Eh1"/>
-                            <constraint firstItem="2bx-6z-EFh" firstAttribute="trailing" secondItem="OmK-c5-XqS" secondAttribute="trailing" id="DVr-hI-Ia3"/>
-                            <constraint firstItem="gZg-eb-K1i" firstAttribute="top" secondItem="Oah-nu-4KG" secondAttribute="bottom" constant="15" id="EZc-JY-hca"/>
-                            <constraint firstItem="Oah-nu-4KG" firstAttribute="top" secondItem="OmK-c5-XqS" secondAttribute="bottom" constant="15" id="I8q-rm-xrJ"/>
-                            <constraint firstItem="dPl-h7-dx2" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="20" symbolic="YES" id="Iio-ef-Je6"/>
-                            <constraint firstItem="2bx-6z-EFh" firstAttribute="leading" secondItem="OmK-c5-XqS" secondAttribute="leading" id="Pjs-zS-ekM"/>
-                            <constraint firstItem="Oah-nu-4KG" firstAttribute="leading" secondItem="gZg-eb-K1i" secondAttribute="leading" id="cFX-XK-Hkb"/>
-                            <constraint firstItem="dPl-h7-dx2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cIT-7r-sCg"/>
-                            <constraint firstItem="dPl-h7-dx2" firstAttribute="leading" secondItem="2bx-6z-EFh" secondAttribute="leading" id="caj-Vk-I2K"/>
-                            <constraint firstItem="dPl-h7-dx2" firstAttribute="trailing" secondItem="2bx-6z-EFh" secondAttribute="trailing" id="pHm-ej-3mU"/>
-                            <constraint firstItem="Oah-nu-4KG" firstAttribute="leading" secondItem="OmK-c5-XqS" secondAttribute="leading" id="tbw-BA-Frh"/>
-                            <constraint firstItem="Oah-nu-4KG" firstAttribute="trailing" secondItem="gZg-eb-K1i" secondAttribute="trailing" id="vlt-7G-lBh"/>
-                            <constraint firstItem="OmK-c5-XqS" firstAttribute="top" secondItem="2bx-6z-EFh" secondAttribute="bottom" constant="15" id="wsl-q2-tSL"/>
+                            <constraint firstItem="Olm-ve-lpe" firstAttribute="top" secondItem="MS2-c1-9IT" secondAttribute="bottom" constant="10" id="0jc-4A-6fa"/>
+                            <constraint firstItem="Vl9-TE-eFV" firstAttribute="trailing" secondItem="3cb-h2-8Aj" secondAttribute="trailing" id="2Pe-Rh-bYo"/>
+                            <constraint firstItem="6TT-np-fQn" firstAttribute="leading" secondItem="3cb-h2-8Aj" secondAttribute="leading" id="4YS-H1-dXr"/>
+                            <constraint firstItem="X6K-4w-fzz" firstAttribute="height" secondItem="Olm-ve-lpe" secondAttribute="height" id="Gx7-1D-mxo"/>
+                            <constraint firstItem="3cb-h2-8Aj" firstAttribute="top" secondItem="Vl9-TE-eFV" secondAttribute="bottom" constant="10" id="LTB-P1-uMh"/>
+                            <constraint firstItem="GVY-sK-sT4" firstAttribute="leading" secondItem="Olm-ve-lpe" secondAttribute="trailing" constant="10" id="Lsh-FM-JRh"/>
+                            <constraint firstItem="X6K-4w-fzz" firstAttribute="leading" secondItem="Olm-ve-lpe" secondAttribute="leading" id="Mw1-pg-Vrz"/>
+                            <constraint firstItem="3cb-h2-8Aj" firstAttribute="trailing" secondItem="6TT-np-fQn" secondAttribute="trailing" id="W0A-hB-8Gt"/>
+                            <constraint firstItem="3cb-h2-8Aj" firstAttribute="leading" secondItem="Vl9-TE-eFV" secondAttribute="leading" id="YfP-Hs-8oI"/>
+                            <constraint firstItem="Vl9-TE-eFV" firstAttribute="leading" secondItem="X6K-4w-fzz" secondAttribute="leading" id="ZBH-gQ-ycf"/>
+                            <constraint firstItem="GVY-sK-sT4" firstAttribute="centerY" secondItem="Olm-ve-lpe" secondAttribute="centerY" id="Zzg-k4-wWF"/>
+                            <constraint firstItem="X6K-4w-fzz" firstAttribute="trailing" secondItem="Vl9-TE-eFV" secondAttribute="trailing" id="bcZ-kC-Oou"/>
+                            <constraint firstItem="GVY-sK-sT4" firstAttribute="width" secondItem="Olm-ve-lpe" secondAttribute="width" id="c6E-sI-qqx"/>
+                            <constraint firstItem="6TT-np-fQn" firstAttribute="height" secondItem="3cb-h2-8Aj" secondAttribute="height" id="cLq-ZD-woI"/>
+                            <constraint firstItem="Olm-ve-lpe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="cx4-9x-9D0"/>
+                            <constraint firstItem="X6K-4w-fzz" firstAttribute="top" secondItem="Olm-ve-lpe" secondAttribute="bottom" constant="10" id="fUZ-0a-EVr"/>
+                            <constraint firstItem="GVY-sK-sT4" firstAttribute="trailing" secondItem="X6K-4w-fzz" secondAttribute="trailing" id="gGA-a5-Nd2"/>
+                            <constraint firstItem="Vl9-TE-eFV" firstAttribute="top" secondItem="X6K-4w-fzz" secondAttribute="bottom" constant="10" id="hEm-Z9-dyn"/>
+                            <constraint firstItem="3cb-h2-8Aj" firstAttribute="height" secondItem="Vl9-TE-eFV" secondAttribute="height" id="jYK-Pg-Kku"/>
+                            <constraint firstAttribute="trailing" secondItem="GVY-sK-sT4" secondAttribute="trailing" constant="10" id="lb1-vK-2xg"/>
+                            <constraint firstItem="6TT-np-fQn" firstAttribute="top" secondItem="3cb-h2-8Aj" secondAttribute="bottom" constant="10" id="nJw-hU-CXP"/>
+                            <constraint firstItem="Vl9-TE-eFV" firstAttribute="height" secondItem="X6K-4w-fzz" secondAttribute="height" id="rp0-w8-yLP"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="myTrackerDemo" id="AMy-bC-BFq"/>
+                    <navigationItem key="navigationItem" id="qiW-pe-MLk"/>
                     <connections>
-                        <outlet property="_trackCustomButton" destination="gZg-eb-K1i" id="96L-zW-jiL"/>
-                        <outlet property="_trackInviteButton" destination="2bx-6z-EFh" id="s2G-MM-Ied"/>
-                        <outlet property="_trackLevelButton" destination="Oah-nu-4KG" id="ket-De-K6D"/>
-                        <outlet property="_trackLoginButton" destination="dPl-h7-dx2" id="SbN-VB-9ei"/>
-                        <outlet property="_trackRegistrationButton" destination="OmK-c5-XqS" id="Rq0-Bm-BhW"/>
+                        <outlet property="customEventNameField" destination="GVY-sK-sT4" id="mbJ-sU-GTn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="281" y="-626"/>
+            <point key="canvasLocation" x="491" y="-6"/>
+        </scene>
+        <!--Main-->
+        <scene sceneID="bM9-zq-ttF">
+            <objects>
+                <navigationController title="Main" id="XCs-Lk-FTL" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="gek-QA-nSw">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="RSO-0k-3sN"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2PO-d7-umt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-371" y="-6"/>
         </scene>
     </scenes>
+    <color key="tintColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>
