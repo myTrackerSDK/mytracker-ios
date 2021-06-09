@@ -5,18 +5,34 @@
 
 [![Podspec][podspec-svg]][podspec-link]
 
-myTracker — free mobile analytics for iOS, Android and Windows  platforms. Get connected to know everything about your apps, audience and advertising campaigns.
+myTracker — free mobile analytics for iOS and Android platforms. Get connected to know everything about your apps, audience and advertising campaigns.
 
 ## Integrate
 
 **Installation**
- - **[CocoaPods](https://cocoapods.org/pods/myTrackerSDK)**
+ - **[Swift Package Manager](https://github.com/myTrackerSDK/mytracker-ios-spm)**
  
-   Add the following line to your Podfile:
+   Do the next steps:
+   * Open your project in XCode
+   * Use menu to open Swift Package Manager
+      * File -> Swift Packages -> Add Package Dependency...
+   * Use the repository URL to add MyTrackerSDK as a dependency with a required version
+   * Also you have to add dependencies manually:
+     * AdSupport
+     * SystemConfiguration
+     * CoreTelephony 
+     * CoreData 
+     * UIKit 
+     * iAd 
+     * StoreKit 
+     * CoreMotion
+- **[CocoaPods](https://cocoapods.org/pods/myTrackerSDK)**
+
+  Add the following line to your Podfile:
    ```ruby
    pod 'myTrackerSDK'
    ```
-   Run `pod install`.
+  Run `pod install`
 
 Integration instructions are available on our [website](https://tracker.my.com/docs/).
 
@@ -24,7 +40,7 @@ Demo-app with examples of integration available in [myTrackerDemo folder](https:
 
 ## Requirements
 
-iOS 8.0
+iOS 9.0
 
 [license-svg]: https://img.shields.io/badge/license-LGPL-lightgrey.svg
 [license-link]: https://github.com/myTrackerSDK/mytracker-ios/blob/master/LICENSE
