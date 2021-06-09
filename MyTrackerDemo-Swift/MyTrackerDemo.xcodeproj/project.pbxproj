@@ -20,7 +20,8 @@
 		27BBA3E7238D46C8006A4596 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27BBA3E6238D46C8006A4596 /* iAd.framework */; };
 		27BBA3E9238D46CF006A4596 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27BBA3E8238D46CF006A4596 /* CoreTelephony.framework */; };
 		27BBA3EB238D4724006A4596 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 27BBA3EA238D470C006A4596 /* libz.tbd */; };
-		27EC926123ABAA93003B2CC9 /* ADClient+Fake.m in Sources */ = {isa = PBXBuildFile; fileRef = 27EC926023ABAA93003B2CC9 /* ADClient+Fake.m */; };
+		27D9D061265BD1AF00D00C8E /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27D9D060265BD1AF00D00C8E /* CoreMotion.framework */; };
+		BC3838042608C603005A47BA /* ADClient+Fake.m in Sources */ = {isa = PBXBuildFile; fileRef = BC3838022608C603005A47BA /* ADClient+Fake.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -52,9 +53,10 @@
 		27BBA3E6238D46C8006A4596 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
 		27BBA3E8238D46CF006A4596 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		27BBA3EA238D470C006A4596 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
-		27EC925E23ABAA92003B2CC9 /* MyTrackerDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MyTrackerDemo-Bridging-Header.h"; sourceTree = "<group>"; };
-		27EC925F23ABAA93003B2CC9 /* ADClient+Fake.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ADClient+Fake.h"; sourceTree = "<group>"; };
-		27EC926023ABAA93003B2CC9 /* ADClient+Fake.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ADClient+Fake.m"; sourceTree = "<group>"; };
+		27D9D060265BD1AF00D00C8E /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		BC3838012608C602005A47BA /* MyTrackerDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MyTrackerDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		BC3838022608C603005A47BA /* ADClient+Fake.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "ADClient+Fake.m"; path = "../../MyTrackerDemo/MyTrackerDemo/ADClient+Fake.m"; sourceTree = "<group>"; };
+		BC3838032608C603005A47BA /* ADClient+Fake.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "ADClient+Fake.h"; path = "../../MyTrackerDemo/MyTrackerDemo/ADClient+Fake.h"; sourceTree = "<group>"; };
 		BCBAF08424ED936C0084EE93 /* MyTrackerDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MyTrackerDemo.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -66,6 +68,7 @@
 				27BBA3E1238D46AF006A4596 /* CoreLocation.framework in Frameworks */,
 				27BBA3E3238D46BA006A4596 /* StoreKit.framework in Frameworks */,
 				27BBA3E7238D46C8006A4596 /* iAd.framework in Frameworks */,
+				27D9D061265BD1AF00D00C8E /* CoreMotion.framework in Frameworks */,
 				27BBA3E9238D46CF006A4596 /* CoreTelephony.framework in Frameworks */,
 				27BBA3DF238D46A2006A4596 /* SystemConfiguration.framework in Frameworks */,
 				27BBA3DA238D462C006A4596 /* CoreData.framework in Frameworks */,
@@ -77,13 +80,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		026563E1FB7BB91B5034E9FF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		2723F9132379C1D0001EA7FD = {
 			isa = PBXGroup;
 			children = (
 				2723F91E2379C1D0001EA7FD /* MyTrackerDemo */,
 				2723F91D2379C1D0001EA7FD /* Products */,
 				27BBA3D8238D462C006A4596 /* Frameworks */,
-				EABB267D010AB5A2AF2CA6C9 /* Pods */,
+				026563E1FB7BB91B5034E9FF /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,8 +115,9 @@
 				2723F9282379C1D2001EA7FD /* Assets.xcassets */,
 				2723F92A2379C1D2001EA7FD /* LaunchScreen.storyboard */,
 				2723F92D2379C1D2001EA7FD /* Info.plist */,
-				27EC925E23ABAA92003B2CC9 /* MyTrackerDemo-Bridging-Header.h */,
-				27EC925B23ABA966003B2CC9 /* ADClient+Fake */,
+				BC3838012608C602005A47BA /* MyTrackerDemo-Bridging-Header.h */,
+				BC3838032608C603005A47BA /* ADClient+Fake.h */,
+				BC3838022608C603005A47BA /* ADClient+Fake.m */,
 			);
 			path = MyTrackerDemo;
 			sourceTree = "<group>";
@@ -114,6 +125,7 @@
 		27BBA3D8238D462C006A4596 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				27D9D060265BD1AF00D00C8E /* CoreMotion.framework */,
 				27BBA3EA238D470C006A4596 /* libz.tbd */,
 				27BBA3E8238D46CF006A4596 /* CoreTelephony.framework */,
 				27BBA3E6238D46C8006A4596 /* iAd.framework */,
@@ -124,22 +136,6 @@
 				27BBA3D9238D462C006A4596 /* CoreData.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		27EC925B23ABA966003B2CC9 /* ADClient+Fake */ = {
-			isa = PBXGroup;
-			children = (
-				27EC925F23ABAA93003B2CC9 /* ADClient+Fake.h */,
-				27EC926023ABAA93003B2CC9 /* ADClient+Fake.m */,
-			);
-			path = "ADClient+Fake";
-			sourceTree = "<group>";
-		};
-		EABB267D010AB5A2AF2CA6C9 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,7 +171,7 @@
 				TargetAttributes = {
 					2723F91B2379C1D0001EA7FD = {
 						CreatedOnToolsVersion = 11.2.1;
-						LastSwiftMigration = 1120;
+						LastSwiftMigration = 1240;
 					};
 				};
 			};
@@ -216,7 +212,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2723F9242379C1D0001EA7FD /* ViewController.swift in Sources */,
-				27EC926123ABAA93003B2CC9 /* ADClient+Fake.m in Sources */,
+				BC3838042608C603005A47BA /* ADClient+Fake.m in Sources */,
 				2723F9202379C1D0001EA7FD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -366,6 +362,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L2QFT5NA2Q;
+				EXCLUDED_ARCHS = i386;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SOURCE_ROOT)",
@@ -419,6 +416,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L2QFT5NA2Q;
+				EXCLUDED_ARCHS = i386;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SOURCE_ROOT)",

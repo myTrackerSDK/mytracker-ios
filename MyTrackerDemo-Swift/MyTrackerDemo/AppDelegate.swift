@@ -39,7 +39,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate
 		MRMyTracker.setAttributionDelegate(self)
 		
 		ADClient.shared().isAttributionDetailsEnabled = false;
-		
+
 		return true
 	}
 
