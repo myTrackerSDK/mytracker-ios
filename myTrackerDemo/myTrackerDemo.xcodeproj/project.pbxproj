@@ -12,6 +12,7 @@
 		2723F9272379C1D0001EA7FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2723F9252379C1D0001EA7FD /* Main.storyboard */; };
 		2723F9292379C1D2001EA7FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2723F9282379C1D2001EA7FD /* Assets.xcassets */; };
 		2723F92C2379C1D2001EA7FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2723F92A2379C1D2001EA7FD /* LaunchScreen.storyboard */; };
+		27B890FF272AC7F6008E91E1 /* ADClient+Fake.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B890FD272AC7F6008E91E1 /* ADClient+Fake.m */; };
 		27BBA3DA238D462C006A4596 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27BBA3D9238D462C006A4596 /* CoreData.framework */; };
 		27BBA3DF238D46A2006A4596 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27BBA3DE238D46A2006A4596 /* SystemConfiguration.framework */; };
 		27BBA3E1238D46AF006A4596 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27BBA3E0238D46AF006A4596 /* CoreLocation.framework */; };
@@ -21,7 +22,6 @@
 		27BBA3E9238D46CF006A4596 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27BBA3E8238D46CF006A4596 /* CoreTelephony.framework */; };
 		27BBA3EB238D4724006A4596 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 27BBA3EA238D470C006A4596 /* libz.tbd */; };
 		27D9D061265BD1AF00D00C8E /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27D9D060265BD1AF00D00C8E /* CoreMotion.framework */; };
-		BC3838042608C603005A47BA /* ADClient+Fake.m in Sources */ = {isa = PBXBuildFile; fileRef = BC3838022608C603005A47BA /* ADClient+Fake.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -45,6 +45,8 @@
 		2723F9282379C1D2001EA7FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2723F92B2379C1D2001EA7FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2723F92D2379C1D2001EA7FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27B890FD272AC7F6008E91E1 /* ADClient+Fake.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ADClient+Fake.m"; sourceTree = "<group>"; };
+		27B890FE272AC7F6008E91E1 /* ADClient+Fake.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ADClient+Fake.h"; sourceTree = "<group>"; };
 		27BBA3D9238D462C006A4596 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		27BBA3DE238D46A2006A4596 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		27BBA3E0238D46AF006A4596 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -55,8 +57,6 @@
 		27BBA3EA238D470C006A4596 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		27D9D060265BD1AF00D00C8E /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		BC3838012608C602005A47BA /* MyTrackerDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MyTrackerDemo-Bridging-Header.h"; sourceTree = "<group>"; };
-		BC3838022608C603005A47BA /* ADClient+Fake.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "ADClient+Fake.m"; path = "../../MyTrackerDemo/MyTrackerDemo/ADClient+Fake.m"; sourceTree = "<group>"; };
-		BC3838032608C603005A47BA /* ADClient+Fake.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "ADClient+Fake.h"; path = "../../MyTrackerDemo/MyTrackerDemo/ADClient+Fake.h"; sourceTree = "<group>"; };
 		BCBAF08424ED936C0084EE93 /* MyTrackerDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MyTrackerDemo.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -80,20 +80,12 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		026563E1FB7BB91B5034E9FF /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 		2723F9132379C1D0001EA7FD = {
 			isa = PBXGroup;
 			children = (
 				2723F91E2379C1D0001EA7FD /* MyTrackerDemo */,
 				2723F91D2379C1D0001EA7FD /* Products */,
 				27BBA3D8238D462C006A4596 /* Frameworks */,
-				026563E1FB7BB91B5034E9FF /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -116,11 +108,20 @@
 				2723F92A2379C1D2001EA7FD /* LaunchScreen.storyboard */,
 				2723F92D2379C1D2001EA7FD /* Info.plist */,
 				BC3838012608C602005A47BA /* MyTrackerDemo-Bridging-Header.h */,
-				BC3838032608C603005A47BA /* ADClient+Fake.h */,
-				BC3838022608C603005A47BA /* ADClient+Fake.m */,
+				27B890FC272AC7F6008E91E1 /* ADClient+Fake */,
 			);
 			path = MyTrackerDemo;
 			sourceTree = "<group>";
+		};
+		27B890FC272AC7F6008E91E1 /* ADClient+Fake */ = {
+			isa = PBXGroup;
+			children = (
+				27B890FD272AC7F6008E91E1 /* ADClient+Fake.m */,
+				27B890FE272AC7F6008E91E1 /* ADClient+Fake.h */,
+			);
+			name = "ADClient+Fake";
+			path = "myTrackerDemo/ADClient+Fake";
+			sourceTree = SOURCE_ROOT;
 		};
 		27BBA3D8238D462C006A4596 /* Frameworks */ = {
 			isa = PBXGroup;
@@ -175,7 +176,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 2723F9172379C1D0001EA7FD /* Build configuration list for PBXProject "MyTrackerDemo" */;
+			buildConfigurationList = 2723F9172379C1D0001EA7FD /* Build configuration list for PBXProject "myTrackerDemo" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -212,7 +213,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2723F9242379C1D0001EA7FD /* ViewController.swift in Sources */,
-				BC3838042608C603005A47BA /* ADClient+Fake.m in Sources */,
+				27B890FF272AC7F6008E91E1 /* ADClient+Fake.m in Sources */,
 				2723F9202379C1D0001EA7FD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -463,7 +464,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2723F9172379C1D0001EA7FD /* Build configuration list for PBXProject "MyTrackerDemo" */ = {
+		2723F9172379C1D0001EA7FD /* Build configuration list for PBXProject "myTrackerDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2723F92E2379C1D2001EA7FD /* Debug */,
