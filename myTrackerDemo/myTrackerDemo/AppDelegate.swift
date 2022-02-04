@@ -21,7 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate
 					 didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool
 	{
 		// Enable debug mode for tracker
-		MRMyTracker.setDebugMode(true)
+		MRMyTracker.setDebugMode(enabled: true)
 		
 		// Get tracker's configuration object.
 		let trackerConfig = MRMyTracker.trackerConfig()
@@ -36,7 +36,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate
 		
 		
 		// Set delegate which will receive attribution's information.
-		MRMyTracker.setAttributionDelegate(self)
+		MRMyTracker.setAttribution(delegate: self)
 		
 		ADClient.shared().isAttributionDetailsEnabled = false;
 
@@ -45,26 +45,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate
 
 	func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey: Any]) -> Bool
 	{
-		return MRMyTracker.handleOpen(url, options: nil)
+		return MRMyTracker.handleOpen(url: url, options: nil)
 	}
 
 	func application(_ application: UIApplication, open url: URL, sourceApplication: String?, annotation: Any) -> Bool
 	{
-		return MRMyTracker.handleOpen(url, sourceApplication: nil, annotation: nil)
+		return MRMyTracker.handleOpen(url: url, sourceApplication: nil, annotation: nil)
 	}
 
 	func application(_ application: UIApplication,
 					 continue userActivity: NSUserActivity,
 					 restorationHandler: @escaping ([UIUserActivityRestoring]?) -> Void) -> Bool
 	{
-		return MRMyTracker.continue(userActivity, restorationHandler: nil)
+		return MRMyTracker.continue(userActivity: userActivity, restorationHandler: nil)
 	}
 }
 
 // Current class implements MRMyTrackerAttributionDelegate protocol in order to be suitable for MRMyTracker attribution delegate property
 extension AppDelegate: MRMyTrackerAttributionDelegate
 {
-	func didReceive(_ attribution: MRMyTrackerAttribution)
+	func didReceive(attribution: MRMyTrackerAttribution)
 	{
 		deeplink = attribution.deeplink
 	}

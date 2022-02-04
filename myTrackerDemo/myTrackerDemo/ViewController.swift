@@ -21,19 +21,19 @@ class ViewController: UIViewController
 			return
 		}
 		// Track custom event if eventName is not nil
-		MRMyTracker.trackEvent(withName: eventName)
+		MRMyTracker.trackEvent(name: eventName)
 	}
 
 	@IBAction func trackLoginEvent(_ sender: Any)
 	{
-		MRMyTracker.trackLoginEvent("custom_user_identifier",
-									withVkConnectId:"vk_connect_id")
+		MRMyTracker.trackLoginEvent(userId: "custom_user_identifier",
+									vkConnectId:"vk_connect_id")
 	}
 
 	@IBAction func trackRegistrationEvent(_ sender: Any)
 	{
-		MRMyTracker.trackRegistrationEvent("custom_user_identifier",
-										   withVkConnectId:"vk_connect_id")
+		MRMyTracker.trackRegistrationEvent(userId: "custom_user_identifier",
+										   vkConnectId:"vk_connect_id")
 	}
 
 	@IBAction func trackInviteEvent(_ sender: Any)
