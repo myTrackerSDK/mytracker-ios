@@ -175,7 +175,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 2723F9172379C1D0001EA7FD /* Build configuration list for PBXProject "MyTrackerDemo" */;
+			buildConfigurationList = 2723F9172379C1D0001EA7FD /* Build configuration list for PBXProject "myTrackerDemo" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -362,6 +362,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L2QFT5NA2Q;
+				ENABLE_BITCODE = NO;
 				EXCLUDED_ARCHS = i386;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -416,6 +417,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L2QFT5NA2Q;
+				ENABLE_BITCODE = NO;
 				EXCLUDED_ARCHS = i386;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -463,7 +465,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2723F9172379C1D0001EA7FD /* Build configuration list for PBXProject "MyTrackerDemo" */ = {
+		2723F9172379C1D0001EA7FD /* Build configuration list for PBXProject "myTrackerDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2723F92E2379C1D2001EA7FD /* Debug */,
