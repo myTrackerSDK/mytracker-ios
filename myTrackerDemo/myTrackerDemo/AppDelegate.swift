@@ -29,7 +29,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate
 		trackerConfig.trackLaunch = true
 		
 		// Initialize tracker with trackerId.
-		MRMyTracker.setupTracker("34380715224647855796")
+		MRMyTracker.setupTracker("51464618419148920898")
 		
 		// Set current user's age to 23
 		MRMyTracker.trackerParams().age = NSNumber(value: 23)

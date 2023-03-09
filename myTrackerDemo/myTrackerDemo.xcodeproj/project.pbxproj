@@ -175,7 +175,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 2723F9172379C1D0001EA7FD /* Build configuration list for PBXProject "myTrackerDemo" */;
+			buildConfigurationList = 2723F9172379C1D0001EA7FD /* Build configuration list for PBXProject "MyTrackerDemo" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -361,7 +361,7 @@
 				CODE_SIGN_ENTITLEMENTS = MyTrackerDemo/MyTrackerDemo.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = L2QFT5NA2Q;
+				DEVELOPMENT_TEAM = A98KLPSGWM;
 				ENABLE_BITCODE = NO;
 				EXCLUDED_ARCHS = i386;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -398,7 +398,7 @@
 					"\"iAd\"",
 					"-fprofile-arcs",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.my.tracker.llc.demo.swift;
+				PRODUCT_BUNDLE_IDENTIFIER = com.myTracker.demo.swift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "MyTrackerDemo/MyTrackerDemo-Bridging-Header.h";
@@ -414,9 +414,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = MyTrackerDemo/MyTrackerDemo.entitlements;
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = L2QFT5NA2Q;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = A98KLPSGWM;
 				ENABLE_BITCODE = NO;
 				EXCLUDED_ARCHS = i386;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -453,9 +453,9 @@
 					"\"iAd\"",
 					"-fprofile-arcs",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.my.tracker.llc.demo.swift;
+				PRODUCT_BUNDLE_IDENTIFIER = com.myTracker.demo.swift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = com.myTracker.demo.swift_adHoc;
 				SWIFT_OBJC_BRIDGING_HEADER = "MyTrackerDemo/MyTrackerDemo-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -465,7 +465,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2723F9172379C1D0001EA7FD /* Build configuration list for PBXProject "myTrackerDemo" */ = {
+		2723F9172379C1D0001EA7FD /* Build configuration list for PBXProject "MyTrackerDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2723F92E2379C1D2001EA7FD /* Debug */,
