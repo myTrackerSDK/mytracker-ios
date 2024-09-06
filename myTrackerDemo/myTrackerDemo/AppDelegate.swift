@@ -38,8 +38,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate
 		// Set delegate which will receive attribution's information.
 		MRMyTracker.setAttribution(delegate: self)
 		
-		ADClient.shared().isAttributionDetailsEnabled = false;
-
 		return true
 	}
 
